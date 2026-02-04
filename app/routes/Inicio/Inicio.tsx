@@ -19,6 +19,7 @@ export default function Inicio(){
       <div className="preguntas">
         {preguntas.map((item, index) => (
           <Preguntas
+            key={index}
             pregunta={item.pregunta}
             respuesta={item.descripcion}
           />

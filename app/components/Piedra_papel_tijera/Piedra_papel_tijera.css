@@ -1,0 +1,66 @@
+.ppt-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  padding: 80px;
+}
+
+.opciones {
+  display: flex;
+  gap: 120px;
+}
+
+.opcion-item {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.opcion-item:hover .circulo {
+  border-color: #007bff;
+}
+
+.opcion-item:hover span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.opcion-item:hover { transform: scale(1.1); }
+
+.circulo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #333;
+  margin-bottom: 10px;
+}
+
+.resultado-card {
+  display: flex;
+  background-color: #eee;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resultado-card .texto {
+  flex: 1;
+  padding: 20px;
+}
+
+.resultado-card .imagen-placeholder {
+  width: 150px;
+  background-color: #5d4037;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contadores {
+  display: flex;
+  gap: 50px;
+  font-weight: bold;
+}
