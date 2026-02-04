@@ -1,0 +1,20 @@
+.pregunta-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 3px solid #e24e3a;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+.pregunta-item h3 {
+  margin: 0 0 10px 0;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.pregunta-item p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  padding-left: 5px;
+}
