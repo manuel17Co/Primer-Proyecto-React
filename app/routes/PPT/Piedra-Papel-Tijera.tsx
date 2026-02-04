@@ -1,5 +1,9 @@
+import Piedra_papel_tijera from "~/components/Piedra_papel_tijera/Piedra_papel_tijera"
+
 export default function PiedraPapelTijera() {
-    return (
-        <h1>Piedra, Papel o Tijera</h1>
-    )
+  return (
+    <div className="pagina-ppt">
+      <Piedra_papel_tijera />
+    </div>
+  )
 }
