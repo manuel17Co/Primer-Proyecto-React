@@ -3,18 +3,18 @@ import { useState } from "react"
 
 const datosPersonas = {
   persona1: {
-    nombre: " Juan Pérez",
-    git: " @juan_dev",
+    nombre: " Juan P Triana",
+    git: "Juantriana25",
     telefono: "123456",
-    correo: "juan@mail.com",
-    descripcion: "Fan de React"
+    correo: "juanp.trianab@autonoma.edu.co",
+    descripcion: "Adicto al codigo y la velocidad"
   },
   persona2: {
-    nombre: "Maria Garcia",
-    git: "@maria_code",
+    nombre: "Manuel M Rubio",
+    git: "Manuel17Co",
     telefono: "987654",
-    correo: "maria@mail.com",
-    descripcion: "Experta en CSS"
+    correo: "manuel.munozr@autonoma.edu.co",
+    descripcion: "NKD 1300 GS"
   }
 };
 
@@ -39,7 +39,7 @@ export default function Perfil(){
           Persona 2
         </button>
       </div>
-      <div className="foto-circulo"></div>
+      <img className="foto-circulo" src="../assets/LeBron-James.jpg"/>
       <h2>{datos.nombre}</h2>
       <ul className="perfil-datos">
         <li><strong>Git: </strong>{datos.git}</li>
