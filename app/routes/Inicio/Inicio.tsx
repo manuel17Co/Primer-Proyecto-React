@@ -23,7 +23,7 @@ export default function Inicio(){
 
   return(
     <div className="izquierda">
-      <h3>Cargando preguntas y respuestas desde objetos reutilizando componentes</h3>
+      <h3 className="h3">Cargando preguntas y respuestas desde objetos reutilizando componentes</h3>
       <div className="preguntas">
         {preguntas.map((item, index) => (
           <Preguntas

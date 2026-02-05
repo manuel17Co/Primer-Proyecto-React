@@ -1,7 +1,10 @@
 header {
-  background-color: #D9D9D9;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(168, 99, 71);
   padding: 15px 40px;
-  border-bottom: 2px solid black;
+  border: 2px solid black;
   width: 100%;
   box-sizing: border-box;
 }
@@ -16,17 +19,15 @@ header nav ul {
 
 header nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
+  color: black;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: sans-serif;
-  transition: color 0.3s ease;
+  transition: all 0.2s ease;
 }
+
+header nav ul li:hover {transform: scale(1.1);}
 
 header nav ul li a.active {
-  color: #e24e3a;
-}
-
-header nav ul li a:hover {
-  color: #e24e3a;
+  color: red;
 }
