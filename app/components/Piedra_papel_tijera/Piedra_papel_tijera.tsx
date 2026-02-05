@@ -1,6 +1,13 @@
 import { useState } from "react"
 import "./Piedra_papel_tijera.css"
 
+const imagenes: Record<string, string> = {
+  "Ganaste": "/assets/victoria.jpg", 
+  "Perdiste": "/assets/derrota.jpg",
+  "Empate": "/assets/empate.jpeg",
+  "Elige para empezar!": "/assets/inicioPiedra.jpg"
+};
+
 export default function Piedra_papel_tijera(){
   const opciones = ["Piedra", "Papel", "Tijera"];
 
@@ -45,7 +52,13 @@ export default function Piedra_papel_tijera(){
           <h3>{resultado}</h3>
           <p>Tú: {eleccionJugador || "---"} | PC: {eleccionPC || "---"}</p>
         </div>
-        <div className="imagen-placeholder">Imagen</div>
+        <div className="imagen-resultado-container">
+          <img 
+            src={imagenes[resultado]} 
+            alt={resultado} 
+            className="img-ppt"
+          />
+        </div>
       </div>
 
       <div className="contadores">
