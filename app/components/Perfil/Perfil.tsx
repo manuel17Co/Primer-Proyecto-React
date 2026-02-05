@@ -7,20 +7,21 @@ const datosPersonas = {
     git: "Juantriana25",
     telefono: "123456",
     correo: "juanp.trianab@autonoma.edu.co",
-    descripcion: "Adicto al codigo y la velocidad"
+    descripcion: "Adicto al codigo y la velocidad",
+    foto: "/assets/marc.jpg"
   },
   persona2: {
     nombre: "Manuel M Rubio",
     git: "Manuel17Co",
     telefono: "987654",
     correo: "manuel.munozr@autonoma.edu.co",
-    descripcion: "NKD 1300 GS"
+    descripcion: "NKD 1300 GS",
+    foto: "/assets/lebron.png"
   }
 };
 
 export default function Perfil(){
   const [seleccionada, setSeleccionada] = useState<"persona1" | "persona2">("persona1");
-
   const datos = datosPersonas[seleccionada];
 
   return(
@@ -39,7 +40,7 @@ export default function Perfil(){
           Persona 2
         </button>
       </div>
-      <img className="foto-circulo" src="../assets/LeBron-James.jpg"/>
+      <img className="foto-circulo" src={datos.foto} alt={datos.nombre} />
       <h2>{datos.nombre}</h2>
       <ul className="perfil-datos">
         <li><strong>Git: </strong>{datos.git}</li>
