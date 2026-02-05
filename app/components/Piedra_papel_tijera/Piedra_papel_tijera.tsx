@@ -5,7 +5,10 @@ const imagenes: Record<string, string> = {
   "Ganaste": "/assets/victoria.jpg", 
   "Perdiste": "/assets/derrota.jpg",
   "Empate": "/assets/empate.jpeg",
-  "Elige para empezar!": "/assets/inicioPiedra.jpg"
+  "Elige para empezar!": "/assets/inicioPiedra.jpg",
+  "Piedra": "/assets/piedra2.jpg",
+  "Papel" : "/assets/papel.jpg",
+  "Tijera" : "/assets/tijera.jpg"
 };
 
 export default function Piedra_papel_tijera(){
@@ -41,16 +44,15 @@ export default function Piedra_papel_tijera(){
       <div className="opciones">
         {opciones.map((opcion) => (
           <div key={opcion} className="opcion-item" onClick={() => jugar(opcion)}>
-            <div className={`circulo ${opcion.toLowerCase()}`}></div>
-            <span>{opcion}</span>
+            <img src={imagenes[opcion]} alt={opcion} className="new-img"/>
           </div>
         ))}
       </div>
 
       <div className="resultado-card">
         <div className="texto">
-          <h3>{resultado}</h3>
-          <p>Tú: {eleccionJugador || "---"} | PC: {eleccionPC || "---"}</p>
+          <h2>{resultado}</h2>
+          <h4>Tú: {eleccionJugador || "---"} | PC: {eleccionPC || "---"}</h4>
         </div>
         <div className="imagen-resultado-container">
           <img 
